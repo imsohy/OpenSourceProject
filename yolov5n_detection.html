@@ -141,7 +141,7 @@ class Camera {
       let [x1, y1, ,] = boxes_data.slice(i * 4, (i + 1) * 4);
       x1 *= this.canvas.width;
       y1 *= this.canvas.height;
-      const klass = coco_names[classes_data[i]];
+      const klass = coco_names[classes_data[i]];      //this line must be a bug
       const score = scores_data[i].toFixed(2);
 
       // Draw the text last to ensure it's on top.
